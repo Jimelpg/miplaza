@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(82, 10, 150);
+    text-shadow:blueviolet;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    background-color: rgb(216, 181, 240);
+}
+/* el # indica el nombre del componente*/
+
+.contenedor{
+    background-color: rgb(247, 223, 255);
+    width: 15%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+#contenedor-izquierdo { 
+    left: 0px;
+
+}
+
+#contenedor-derecho { 
+    right: 0px;
+
+}
+
+.contenedor-componente {
+    position: relative;
+    height: 10.5%;
+    left: 20%;
+}
+
+.componente{
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+/* el z-index es para poner un orden a los elementos*/ 
+
+.suelo{
+    width: 60%;
+    height: 48%;
+    background-color: #c9e4c5;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.cielo{
+    height: 50%;
+    width: 60%;
+    background-color: cornflowerblue;
+    position: absolute;
+    border-radius: 1rem;
+    top: 1%;
+    left: 20%;
+    opacity: 0.5;
+    z-index: 1;
+
+}
